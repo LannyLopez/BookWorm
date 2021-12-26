@@ -12,31 +12,28 @@
     <div>
         <div>
             <h1>message board</h1>
-            <table>
-                <caption>Messages</caption>
-                <thead>
-                    <tr>
-                        <th>
-                            Username
-                        </th>
+            <section>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="comment">
+                                <p>THE BOOK</p>
 
-                        <th>
-                            Message
-                        </th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        
-                    </tr>
-                </tbody>
-            </table>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="row">
+                        <div class="col-6">
+                            <textarea type="text" class="input" placeholder="Write a comment" v-model="newItem"></textarea>
+                            <button v-on:click="addItem()"  type="submit">Add Comment</button>                        </div>
+                    </div>
+                </div>
+            </section>
+           
         </div>
         <div class="row-fluid">
             <form id="new-user">
-                <input type="text" name="username" placeholder="Username" />
-                <input type="text" name="message" placeholder="Message" />
-                <a id="send" class="btn btn-primary">SEND</a>
                 <a href="./login.html"> create account
                 </a>
             </form>		

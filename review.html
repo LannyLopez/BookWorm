@@ -12,19 +12,31 @@
     <section id="reviewpageReviews">
         <body>
     
-            <div class="rating reviewCard card">
-                <h3>What would you rate this book?</h3>
-                <span><input type="radio" name="rating" id="str9" value="9"><label for="str9"></label></span>
-                <span><input type="radio" name="rating" id="str8" value="8"><label for="str8"></label></span>
-                <span><input type="radio" name="rating" id="str7" value="7"><label for="str7"></label></span>
-                <span><input type="radio" name="rating" id="str6" value="6"><label for="str6"></label></span>
-                <span><input type="radio" name="rating" id="str5" value="5"><label for="str5"></label></span>
-                <span><input type="radio" name="rating" id="str4" value="4"><label for="str4"></label></span>
-                <span><input type="radio" name="rating" id="str3" value="3"><label for="str3"></label></span>
-                <span><input type="radio" name="rating" id="str2" value="2"><label for="str2"></label></span>
-                <span><input type="radio" name="rating" id="str1" value="1"><label for="str1"></label></span>
-            </div>
+            
            
+              
+               <div class="replies reviewCard card">
+                <div class="rating">
+                    <h3>What would you rate this book?</h3>
+                    <span><input type="radio" name="rating" id="str9" value="9"><label for="str9"></label></span>
+                    <span><input type="radio" name="rating" id="str8" value="8"><label for="str8"></label></span>
+                    <span><input type="radio" name="rating" id="str7" value="7"><label for="str7"></label></span>
+                    <span><input type="radio" name="rating" id="str6" value="6"><label for="str6"></label></span>
+                    <span><input type="radio" name="rating" id="str5" value="5"><label for="str5"></label></span>
+                    <span><input type="radio" name="rating" id="str4" value="4"><label for="str4"></label></span>
+                    <span><input type="radio" name="rating" id="str3" value="3"><label for="str3"></label></span>
+                    <span><input type="radio" name="rating" id="str2" value="2"><label for="str2"></label></span>
+                    <span><input type="radio" name="rating" id="str1" value="1"><label for="str1"></label></span>
+                </div>
+                <div class="titlebox">
+                    <h3> Book title</h3>
+                    <input type="text" placeholder="Book Title">
+                </div>
+                   <h3> Review</h3>
+                <textarea name="commentGeneral" oninput='this.style.height = "";this.style.height = this.scrollHeight + "px"' maxlength="300" wrap="soft" id="text" rowsinputReply="" placeholder="Write a Comment"></textarea>
+                <button type="submit">Comment</button>
+            
+           </div>
         </body>
     </section>
 </html>

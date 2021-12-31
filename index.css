@@ -137,7 +137,6 @@ h2 {
 .reviewCard h3 {
     font-size: 1.5rem;
     text-align: center;
-    padding-bottom: .75rem;
 }
 
 .reviewComment {
@@ -191,7 +190,10 @@ h2 {
     padding: .5rem;
     border-radius: .5rem;
     border-bottom: 1px solid #08ac4b;
+    background-color: rgba(139, 139, 139, 0.1);
+
 }
+
 
 textarea {
     border: none;
@@ -205,6 +207,19 @@ textarea {
     background-color: rgba(139, 139, 139, 0.1);
     border-radius: .5rem;
     
+}
+input{
+    border: none;
+    padding: .25rem .25rem;
+    height: fit-content;
+    width: 45%;
+    min-width: 25ch;
+    max-width: 50ch;
+    resize: none;
+    background-color: rgba(139, 139, 139, 0.1);
+    border-radius: .5rem;
+    text-align: left;
+   margin-left: 5px;
 }
 
 #user-info {
@@ -232,6 +247,12 @@ textarea {
     flex-wrap: wrap;
     justify-content: center;
 
+}
+.titlebox{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 1rem;
 }
 
 .review-card {

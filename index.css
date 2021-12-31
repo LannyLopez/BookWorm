@@ -106,6 +106,10 @@ header nav button {
 #homepageReviews {
     margin: 1rem;
 }
+#reviewpageReviews{
+    margin: 1rem;
+}
+
 #homepageReviews #login-button-frontpage {
     font-size: 1rem;
     margin-top: 1rem;
@@ -127,6 +131,7 @@ h2 {
 .reviewCard {
     min-width: 20ch;
     max-width: 70ch;
+    align-items: center;
 }
 
 .reviewCard h3 {
@@ -159,9 +164,9 @@ h2 {
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-    width: 100%
+    width: 100%;
     padding: .5rem;
-    border-bottom: 1px solid #08ac4b;
+    border-bottom:1px solid #08ac4b;
 }
 
 .comment p {
@@ -244,6 +249,40 @@ textarea {
     font-size: 1.5rem;
 }
 
+/* ratings */
+.rating {
+    float: none;
+    width:300px;
+    height:150px;
+}
+.rating span { 
+    float:right;
+ }
+.rating span input {
+    position:absolute;
+    top:0px;
+    left:0px;
+    opacity:0;
+}
+.rating span label {
+    display:inline-block;
+    width:30px;
+    height:30px;
+    text-align:center;
+    color:#FFF;
+    background:#ccc;
+    font-size:30px;
+    margin-right:2px;
+    line-height:30px;
+    border-radius:50%;
+    -webkit-border-radius:50%;
+}
+.rating span:hover ~ span label,
+.rating span:hover label,
+.rating span.checked label,
+.rating span.checked ~ span label {
+    background:#F90;
+    color:#FFF;}
 @media (max-width: 500px) {
     header nav {
         flex-direction: column;

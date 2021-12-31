@@ -77,6 +77,8 @@ header nav {
     padding-bottom: .5rem;
 }
 
+
+
 header nav a{
     text-decoration: none;
     color: white;
@@ -94,7 +96,7 @@ header nav button {
 /* Homepage Styles */
 
 .card {
-    background-color: white;
+    background-color: rgba(255,255,255,1);
     margin: 2rem auto;
     padding: 1.5rem;
     box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
@@ -108,6 +110,10 @@ header nav button {
     margin: 1rem;
 }
 
+#homepageReviews #login-button-frontpage {
+    font-size: 1rem;
+    margin-top: 1rem;
+}
 h1 {
     text-align: center;
     font-size: 3rem;
@@ -276,5 +282,21 @@ textarea {
 .rating span.checked label,
 .rating span.checked ~ span label {
     background:#F90;
-    color:#FFF;
+    color:#FFF;}
+@media (max-width: 500px) {
+    header nav {
+        flex-direction: column;
+        text-align: center;
+    }
+    header nav a {
+        padding-top: .25rem;
+        font-size: 1.75rem;
+    }
+    header nav button {
+        padding-top: .25rem;
+        font-size: 1.75rem;
+    }
+    h1 {
+        font-size: 2.5rem;
+    }
 }

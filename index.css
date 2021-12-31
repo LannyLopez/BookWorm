@@ -97,7 +97,6 @@ header nav button {
     background-color: white;
     margin: 2rem auto;
     padding: 1.5rem;
-    padding: 1.5rem;
     box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
     border-radius: 1.5rem;
 }
@@ -106,14 +105,14 @@ header nav button {
     margin: 1rem;
 }
 
-#homepageReviews h1 {
+h1 {
     text-align: center;
     font-size: 3rem;
     padding: 1rem;
     color: white;
 }
 
-#homepageReviews h2 {
+h2 {
     text-align: center;
     font-size: 2rem;
     padding: 1rem;
@@ -196,5 +195,47 @@ textarea {
     background-color: rgba(139, 139, 139, 0.1);
     border-radius: .5rem;
     
+}
+
+#user-info {
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+#user-info h2 {
+    color: white;
+    font-size: 2.25rem;
+}
+
+#user-info button {
+    font-size: 1.5rem;
+    padding: 1.5rem;
+    text-align: center;
+    color: white;
+    text-decoration: underline;
+}
+
+.reviews {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+.review-card {
+    max-width: 50ch;
+    margin: 1rem;
+}
+
+.review-card #review-score {
+    text-align: center;
+    padding-top: .5rem;
+}
+
+#user-info .review-card h2 {
+    color: black;
+    font-size: 1.5rem;
 }
 

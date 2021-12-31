@@ -11,7 +11,7 @@
 
     <header>
         <nav>
-            <a href="">Home</a>
+            <a href="index.html">Home</a>
             <a href="">Reviews</a>
             <Button>Login</Button>
             <button>Logout</button>
@@ -20,16 +20,22 @@
     </header>
 
     <section id="user-info">
-        <h1>$USERNAME$</h1>
-        <button>Add A New Review</button>
+        <h1>Welcome Back $USERNAME$</h1>
         <h2>My Reviews</h2>
         <div class="reviews">
-            <div class="review-card">
+            <div class="review-card card">
                 <h2>Book Title</h2>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis odit ab nostrum suscipit esse incidunt!</p>
-                <p>Overall Recommendation: #/#</p>
-            </div>
-        </div>
+                <p id="review-score">Overall Score: #/#</p>
+            </div>   
+            <div class="review-card card">
+                <h2>Book Title</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis odit ab nostrum suscipit esse incidunt!</p>
+                <p id="review-score">Overall Score: #/#</p>
+            </div>   
+             
+        </div>         
+        <button>Add A New Review</button>
     </section>
 
     <style>

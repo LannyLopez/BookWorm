@@ -13,12 +13,10 @@
         <nav>
             <a href="/">Home</a>
             <a href="/reviews">Reviews</a>
-
+            <a href="/profile">Profile</a>
             {{#if LoggedIn}}
-                <a href="/profile">Profile</a>
                 <button id="logout">Logout</button>
             {{else}}
-
                 <a href="/login">Login</a>
             {{/if}}
         </nav>

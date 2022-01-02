@@ -13,7 +13,7 @@
         <nav>
             <a href="/">Home</a>
             <a href="/reviews">Reviews</a>
-            <a href="/profile">Profile</a>
+            <a href="/profile">Live Chat</a>
             {{#if LoggedIn}}
                 <button id="logout">Logout</button>
             {{else}}
@@ -23,7 +23,7 @@
     </header> 
     
     <main>
-        
+        {{{body}}}
     </main>
 
     {{#if loggedIn}}

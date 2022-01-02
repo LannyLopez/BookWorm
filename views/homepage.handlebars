@@ -1,0 +1,35 @@
+<section id="homepageReviews">
+
+        <h1>Book Worm</h1>
+        <h2>Book of the week</h2>
+
+        <div class="reviewCard card">
+            <h3>Clifford The Big Red Dog</h3>
+            <p class="review">
+                When Emily Elizabeth meets a magical animal rescuer who gives her a little red puppy, she never anticipated waking up to find a giant, 10-foot hound in her small New York City apartment. With her single mother away on business, Emily and her fun but impulsive uncle set out on an adventure that takes a bite out of the Big Apple.
+            </p>
+        </div>
+
+        <div class="reviewComment card">
+            <h3>Comments</h3>
+            <div class="comment">
+                <h4>$Username$</h4>
+                <p>$Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur quae animi sapiente cumque provident ipsa soluta accusamus, laborum fugit natus.$</p>
+            </div>
+            <div class="replies">
+                {{!-- <textarea name="commentGeneral" oninput =' this.style.height = "" this.style.height = this.scrollHeight + "px"' max-length="300" wrap="soft" id="text"  placeholder="Write a Comment"></textarea> --}}
+                {{!-- <input type="text" placeholder="bruh"> --}}
+                {{!-- <button type="submit">Comment</button>
+                <button id="login-button-frontpage">Login/Register to Comment</button> --}}
+                {{#if LoggedIn}} 
+                <textarea name="commentGeneral" oninput =' this.style.height = "" this.style.height = this.scrollHeight + "px"' max-length="300" wrap="soft" id="text"  placeholder="Write a Comment"></textarea>
+                <button type="submit">Comment</button>
+                {{else}} 
+                <a href="/login">Please Login To Comment</a>
+                {{/if}}
+            </div>
+            
+        </div>
+
+        
+</section>

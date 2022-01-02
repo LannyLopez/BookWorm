@@ -12,10 +12,13 @@
 
         <div class="reviewComment card">
             <h3>Comments</h3>
-            <div class="comment">
+            {{!-- <div class="comment">
                 <h4>$Username$</h4>
                 <p>$Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur quae animi sapiente cumque provident ipsa soluta accusamus, laborum fugit natus.$</p>
-            </div>
+            </div> --}}
+            {{#each reviews as |review|}}
+            {{>commentsection}}
+            {{/each}}
             <div class="replies">
                 {{!-- <textarea name="commentGeneral" oninput =' this.style.height = "" this.style.height = this.scrollHeight + "px"' max-length="300" wrap="soft" id="text"  placeholder="Write a Comment"></textarea> --}}
                 {{!-- <input type="text" placeholder="bruh"> --}}

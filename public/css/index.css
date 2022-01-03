@@ -303,7 +303,34 @@ input{
 .rating span.checked label,
 .rating span.checked ~ span label {
     background:#F90;
-    color:#FFF;}
+    color:#FFF;
+}
+
+.page-title{
+    color: black;
+}
+.form {
+    text-align: center;
+}
+.form-group {
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    margin: .5rem auto;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+.form-button {
+    margin: 0 auto;
+    width: 50%;
+    /* background-color: blue; */
+}
+.form-button button {
+    margin: 0 auto;
+}
+
+
 @media (max-width: 500px) {
     header nav {
         flex-direction: column;

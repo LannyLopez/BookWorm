@@ -14,9 +14,9 @@ router.get('/',  withAuth, async (req, res) => {
             ],
         });
 
-        const reviews = dbReviewData.map((review) => {
+        const reviews = dbReviewData.map((review) => 
             review.get({ plain: true})
-        });
+        );
 
         res.render('homepage', {
             reviews,

@@ -12,11 +12,11 @@ router.get('/',  withAuth, async (req, res) => {
                 attributes: ['username', 'comment'],
                 },
             ],
-        }),
-
-        const reviews = dbReviewData.map((review) => {
-            review.get({ plain: true})
         });
+
+        const reviews = dbReviewData.map((review) => 
+            review.get({ plain: true})
+        );
 
         res.render('homepage', {
             reviews,
@@ -29,18 +29,18 @@ router.get('/',  withAuth, async (req, res) => {
 
 });
 
-// router.get('/review/:id', withAuth, async (req, res) => {
-//     try {
-//       const dbSingleReviewData = await Review.findByPk(req.params.id);
+router.get('/review/:id', withAuth, async (req, res) => {
+    try {
+      const dbSingleReviewData = await Review.findByPk(req.params.id);
   
-//       const singleReview = dbSingleReviewData.get({ plain: true });
+      const singleReview = dbSingleReviewData.get({ plain: true });
   
-//       res.render('review', { singleReview, loggedIn: req.session.loggedIn });
-//     } catch (err) {
-//       console.log(err);
-//       res.status(500).json(err);
-//     }
-//   });
+      res.render('review', { singleReview, loggedIn: req.session.loggedIn });
+    } catch (err) {
+      console.log(err);
+      res.status(500).json(err);
+    }
+  });
   
 router.get('/login', (req, res) => {
     if (req.session.loggedIn) {
